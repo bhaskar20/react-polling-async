@@ -1,8 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import uuid from 'uuid/v1';
 
-export default function preparePollingHOC(WrappedComponent) {
-  return class PollingHOC extends Component {
+/**
+ * @param {function} Component
+ * wraps your component and provides three functions (setUpPolling, removePolling, removeAll ) for polling functionality
+ * @return {function}
+ */
+
+module.exports = function preparePollingHOC(WrappedComponent) {
+  return class PollingHOC extends React.Component {
     constructor(props) {
       super(props);
       this._livePolls = {};
@@ -60,7 +66,7 @@ export default function preparePollingHOC(WrappedComponent) {
         removeAllPolling: this.removeAll
       };
 
-      return <WrappedComponent {...this.props} {...pollConfigOptions} />;
+      return (<WrappedComponent {...this.props} {...pollConfigOptions} />);
     }
   };
-}
+};

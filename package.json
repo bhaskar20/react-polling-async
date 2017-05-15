@@ -3,12 +3,26 @@
   "version": "1.0.0",
   "description": "A HOC for registering long-polling on your component",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhaskar20/react-polling-async.git"
+  },
+  "homepage": "https://github.com/bhaskar20/react-polling-async.git",
+  "bugs": "https://github.com/bhaskar20/react-polling-async/issues",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
   "keywords": [
-    "long-polling",
+    "hoc",
+    "higher-order",
     "react",
+    "react-hoc",
+    "component",
+    "react-component",
+    "long-polling",
     "react-poll",
     "live",
     "poll",
@@ -21,11 +35,28 @@
     "uuid": "^3.0.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^3.5.0",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "^15.0.0",
+    "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "5.0.1",
-    "eslint-plugin-react": "7.0.1"
+    "eslint-plugin-react": "7.0.1",
+    "mocha": "^3.4.1",
+    "webpack": "^2.5.1",
+    "webpack-node-externals": "^1.6.0",
+    "yargs": "^8.0.1"
   }
 }
