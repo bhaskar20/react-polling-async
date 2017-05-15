@@ -17,7 +17,8 @@
   "author": "bhaskar@synaptic.io",
   "license": "ISC",
   "dependencies": {
-    "react": "^15.5.4"
+    "react": "^15.5.4",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
