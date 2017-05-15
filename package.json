@@ -1,0 +1,22 @@
+{
+  "name": "react-polling-async",
+  "version": "1.0.0",
+  "description": "A HOC for registering long-polling on your component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "long-polling",
+    "react",
+    "react-poll",
+    "live",
+    "poll",
+    "long-poll"
+  ],
+  "author": "bhaskar@synaptic.io",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.4"
+  }
+}
