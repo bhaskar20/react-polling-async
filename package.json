@@ -18,5 +18,13 @@
   "license": "ISC",
   "dependencies": {
     "react": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "^15.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "5.0.1",
+    "eslint-plugin-react": "7.0.1"
   }
 }
